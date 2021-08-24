@@ -1,0 +1,31 @@
+Android Toast Example
+Toast.makeText(getApplicationContext(),"Hello Javatpoint",Toast.LENGTH_SHORT).show();  
+Another code:
+
+Toast toast=Toast.makeText(getApplicationContext(),"Hello Javatpoint",Toast.LENGTH_SHORT);  
+toast.setMargin(50,50);  
+toast.show();  
+Here, getApplicationContext() method returns the instance of Context.
+
+Full code of activity class displaying Toast
+Let's see the code to display the toast.
+
+File: MainActivity.java
+package example.javatpoint.com.toast;  
+  
+import android.support.v7.app.AppCompatActivity;  
+import android.os.Bundle;  
+import android.widget.Toast;  
+  
+public class MainActivity extends AppCompatActivity {  
+  
+    @Override  
+    protected void onCreate(Bundle savedInstanceState) {  
+        super.onCreate(savedInstanceState);  
+        setContentView(R.layout.activity_main);  
+  
+        //Displaying Toast with Hello Javatpoint message  
+        Toast.makeText(getApplicationContext(),"Hello Javatpoint",Toast.LENGTH_SHORT).show();  
+    }  
+}  
+
